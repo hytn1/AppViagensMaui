@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCustoViagem.Views.AddPedagio"
+             Title="Add Pedágio">
+    <VerticalStackLayout>
+        <Label Text="Local:"/>
+        <Entry x:Name="txt_local"/>
+
+        <Label Text="Valor:"/>
+        <Entry x:Name="txt_valor"/>
+
+        <Button x:Name="btn_salvar" Text="Salvar" HorizontalOptions="Center" Margin="10" Clicked="btn_salvar_Clicked"/>
+    </VerticalStackLayout>
+</ContentPage>

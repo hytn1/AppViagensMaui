@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiCustoViagem.MainPage"
+             Title="Pedágio">
+
+    <ContentPage.Resources>
+        <Style TargetType="Label">
+            <Setter Property="VerticalTextAlignment" Value="Center"/>
+            <Setter Property="VerticalOptions" Value="FillAndExpand"/>
+        </Style>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <VerticalStackLayout>
+            <Label Text="Origem:"/>
+            <Entry x:Name="txt_origem"/>
+
+            <Label Text="Destino:"/>
+            <Entry x:Name="txt_destino"/>
+
+                <Label Text="Distância:"/>
+                <Entry x:Name="txt_distancia"/>
+
+                    <Label Text="Rendimento:"/>
+                    <Entry x:Name="txt_rendimento"/>
+
+                        <Label Text="Preço Gasolina:"/>
+                        <Entry x:Name="txt_gas"/>
+
+
+            <Button x:Name="btn_AddPed" Text="Add Pedágio" Clicked="btn_AddPed_Clicked" HorizontalOptions="Center" Margin="10" />
+            <Button x:Name="btn_calcular" Text="Calcular" Clicked="btn_calcular_Clicked" HorizontalOptions="Center" Margin="10"/>
+            <Button x:Name="btn_ListaPed" Text="Lista Pedágio" Clicked="btn_ListaPed_Clicked" HorizontalOptions="Center" Margin="10"/>
+
+        </VerticalStackLayout>
+    </ContentPage.Content>
+
+</ContentPage>
