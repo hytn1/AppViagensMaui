@@ -23,5 +23,9 @@ public partial class ListaPedagio : ContentPage
                 lista_pedagio.Add(p);
             }
         } 
-    } 
+    }
+    private async void btnadd_Clicked(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new Views.AddPedagio());
+    }
 }

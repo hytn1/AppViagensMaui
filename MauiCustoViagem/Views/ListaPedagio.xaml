@@ -24,6 +24,6 @@
             </ListView.ItemTemplate>
         </ListView>
         <Button x:Name="btn_somar" Text="Somar" HorizontalOptions="Center" Margin="10"/>
-        <Button x:Name="btn_AddNovo" Text="Add Novo" HorizontalOptions="Center" Margin="10"/>
+        <Button x:Name="btn_AddNovo" Text="Add Novo" HorizontalOptions="Center" Margin="10" Clicked="btnadd"/>
     </VerticalStackLayout>
 </ContentPage>
